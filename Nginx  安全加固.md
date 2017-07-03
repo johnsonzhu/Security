@@ -100,7 +100,7 @@ server_tokens off;
 …….省略
 }
 ```
-* 编辑php-fpm配置文件，如fastcgi.conf或fcgi.conf
+* 编辑php-fpm配置文件，如fastcgi.conf或fcgi.conf   
 Ps：不建议修改
 ```
 找到：
@@ -145,4 +145,4 @@ fastcgi_param SERVER_SOFTWARE nginx;
         len = sizeof(ngx_http_server_string) - 1;  
  }  
 ```
-* 4. 程序重新编译完后，要reload不会生效，需要用kill命令杀死原来的进程，再重新启动.
+* 4.程序重新编译完后，要reload不会生效，需要用kill命令杀死原来的进程，再重新启动.
